@@ -8,34 +8,84 @@
 body {
     display: grid;
     grid-template: 1fr 4fr / 1fr 4fr;
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
 }
+
+/* Header */
 
 header {
     background-color: var(--background-color);
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    padding: 10px 20px;
 }
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw;
+    gap: 30px;
+}
+
+.search {
+    display: flex; 
+    gap: 8px;
+}
+
+#search-bar {
+    width: 30vw;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.greeting {
+    display: flex;
+    gap: 16px;
+    line-height: 10px;
+}
+
+.buttons {
+    align-items: center;
+}
+
+/* Sidebar */
 
 .sidebar {
     background-color: var(--primary-color);
     grid-row: 1 / -1;
 }
 
+/* Main */
+
 main {
     background-color: var(--darker-background);
 }
 
-/* .projects {
-    border: 1px solid red;
-    background-color: red;
+/* Icons and elements */
+
+.icon {
+    width: 1.5rem;
 }
 
-.announcements {
-    border: 1px solid purple;
-    background-color: purple;
+.large-icon {
+    width: 5rem;
 }
 
-.trending {
-    border: 1px solid green;
-    background-color: green;
-} */
+button {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: x-large;
+    color: var(--background-color);
+}
