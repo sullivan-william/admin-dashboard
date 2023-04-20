@@ -64,6 +64,16 @@ header {
 .sidebar {
     background-color: var(--primary-color);
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+}
+
+.sidebar > div > div {
+    display: flex;
+    gap: 16px;
+    color: var(--background-color);
 }
 
 /* Main */
@@ -76,6 +86,12 @@ main {
 
 .icon {
     width: 1.5rem;
+    fill: var(--background-color);
+}
+
+.medium-icon {
+    width: 3rem;
+    fill: var(--background-color);
 }
 
 .large-icon {
